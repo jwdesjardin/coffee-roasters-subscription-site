@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap');
+
+// Colors and Values
+
+:root {
+	--dark-greyblue-900: #333d4b;
+	--dark-cyan-600: #0e8784;
+	--medium-grey-400: #83888f;
+	--light-orange-200: #fdd6ba;
+	--light-cream-100: #fefcf7;
+}
+
+// Typography
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Fraunces', serif;
+}
+
+.title-alternate-big {
+	font-size: 72px;
+	font-weight: 900;
+	text-transform: lowercase;
+}
+
+h1 {
+	font-size: 72px;
+	font-weight: 900;
+}
+h2 {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 900;
+}
+h3 {
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 900;
+}
+h4 {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 900;
+}
+
+p,
+.nav-link {
+	font-family: 'Barlow', sans-serif;
+}
+
+p {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.nav-link {
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 700;
+	letter-spacing: 1;
+}
