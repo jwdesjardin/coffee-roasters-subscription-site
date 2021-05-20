@@ -1,0 +1,27 @@
+.why_card_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 24px;
+	background-color: var(--dark-cyan-600);
+	color: var(--light-cream-100);
+	margin: 24px;
+	height: 382px;
+	border-radius: 8px;
+	img {
+		margin-bottom: 56px;
+	}
+}
+
+.why_card_textcontent {
+	max-width: 255px;
+	h3 {
+		font-size: var(--xs-header-fs);
+		margin-bottom: 24px;
+	}
+	p {
+		font-size: var(--lg-body-fs);
+	}
+}
