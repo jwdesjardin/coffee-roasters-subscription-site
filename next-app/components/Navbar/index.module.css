@@ -1,0 +1,25 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 32px 24px;
+}
+
+.logo {
+  max-width: 163px;
+  max-height: 18px;
+}
+
+@media (min-width: 667px) {
+  .logo {
+    max-width: 236px;
+    max-height: 26px;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

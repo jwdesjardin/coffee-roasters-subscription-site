@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 32px 24px;
+}
+
+.logo {
+	max-width: 163px;
+	max-height: 18px;
+	@media (min-width: 667px) {
+		max-width: 236px;
+		max-height: 26px;
+	}
+}
