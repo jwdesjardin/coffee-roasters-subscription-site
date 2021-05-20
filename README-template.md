@@ -1,6 +1,6 @@
 # Frontend Mentor - Coffeeroasters subscription site solution
 
-This is a solution to the [Coffeeroasters subscription site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Coffeeroasters subscription site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -34,7 +34,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -62,35 +62,52 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+### placing images in divs has some benefits
+
+margins will expect how you would expect
+shifting and flexing will work how you would expect
+see commitment imagebox
+
+```js
+<div className={styles.commitment_imagebox}>
+	<img src='/assets/about/mobile/image-commitment.jpg' alt='' />
+</div>
+```
+
+### practical use of an ::after element
+
+### dynamic background-image hero component using inline jsx styles
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
+### cascading margin-bottom on each structure of the component
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.quality_imagebox {
+	max-height: 400px;
+	margin-bottom: 48px;
+	border-radius: 12px;
+	overflow: hidden;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.quality_textcontent {
+	margin-bottom: 61px;
+	h2 {
+		font-size: var(--md-header-fs);
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: var(--md-body-fs);
+	}
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+so in the quality element i have margin on the bottom of the image, the header, and the bottom of the content div. Not shown here i also have margin bottom on the entire container for this component. I liked using margin bottom in this way because it keeps things spaced in a easy to maintain way instead of having one component with both a margin top and bottom that may have conflicting margin tops and bottoms with another compoenet.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
+
+https://fossheim.io/writing/posts/css-text-gradient/
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
