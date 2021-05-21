@@ -74,13 +74,37 @@ see commitment imagebox
 </div>
 ```
 
+![](./README-assets/ScreenShot2.png)
+
 ### practical use of an ::after element
 
-### dynamic background-image hero component using inline jsx styles
+I had just learned to use psuedo elements in the my last project and in this project i had two great opportunities to use them. The process for this was pretty simple. Under the psudeo element selector make sure you have something for content, then set a size, position, z-index and background so you can see someting. This can be used to create elements that are inside another element but are going to be positioned absolute within their parent.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+```css
+.quality_container {
+	text-align: center;
+	padding: 24px;
+	margin: 120px 24px 0px;
+	position: relative;
+	color: var(--light-cream-100);
+	&::after {
+		content: '';
+		background-color: var(--dark-greyblue-900);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80%;
+		z-index: -1;
+		border-radius: 12px;
+	}
+}
+```
 
 ### cascading margin-bottom on each structure of the component
+
+so in the quality element i have margin on the bottom of the image, the header, and the bottom of the content div. Not shown here i also have margin bottom on the entire container for this component. I liked using margin bottom in this way because it keeps things spaced in a easy to maintain way instead of having one component with both a margin top and bottom that may have conflicting margin tops and bottoms with another compoenet.
 
 ```css
 .quality_imagebox {
@@ -101,7 +125,33 @@ Use this section to recap over some of your major learnings while working throug
 }
 ```
 
-so in the quality element i have margin on the bottom of the image, the header, and the bottom of the content div. Not shown here i also have margin bottom on the entire container for this component. I liked using margin bottom in this way because it keeps things spaced in a easy to maintain way instead of having one component with both a margin top and bottom that may have conflicting margin tops and bottoms with another compoenet.
+![](./README-assets/ScreenShot1.png)
+
+### dynamic background-image hero component using inline jsx styles
+
+I was trying to find a way to build a hero component for the about page and subscribe page and was trying to find a way specifically to change the backround image based on a string that was passed in to the component. It took me a minute as i was trying to think of a way that didnt involove styled components to use the javascript value to change the css value. I eventually rember the good ol basics of inline css styles. I used this in my jsx to cleanly acheive what i needed. To keep the markup clean i used the 'container' class to add the other desired styles to this div.
+
+```ts
+interface HeroCardProps {
+	title: string
+	description: string
+	bgURL: string
+}
+
+export const HeroCard: React.FC<HeroCardProps> = ({ bgURL, title, description }) => {
+	return (
+		<div
+			className={styles.container}
+			style={{ backgroundImage: `url(${bgURL})`, backgroundColor: '#333' }}
+		>
+			<div className={styles.textcontent}>
+				<h1>{title}</h1>
+				<p>{description}</p>
+			</div>
+		</div>
+	)
+}
+```
 
 ### Continued development
 
