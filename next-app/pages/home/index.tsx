@@ -98,25 +98,36 @@ const Home = () => {
 				<div className={styles.how_container}>
 					<h2>How it works</h2>
 
-					<HowCard
-						title='Pick your coffee'
-						description='Select from our evolving range of artisan coffees. Our beans are ethically
+					{/* How illustration */}
+					<div className={styles.how_illustration}>
+						<div className={styles.circle}></div>
+						<div className={styles.line}></div>
+						<div className={styles.circle}></div>
+						<div className={styles.line}></div>
+						<div className={styles.circle}></div>
+					</div>
+
+					<div className={styles.how_card_container}>
+						<HowCard
+							title='Pick your coffee'
+							description='Select from our evolving range of artisan coffees. Our beans are ethically
 						sourced and we pay fair prices for them. There are new coffees in all profiles
 						every month for you to try out.'
-						number='01'
-					/>
-					<HowCard
-						title='Choose the frequency'
-						description='Customize your order frequency, quantity, even your roast style and grind type.
+							number='01'
+						/>
+						<HowCard
+							title='Choose the frequency'
+							description='Customize your order frequency, quantity, even your roast style and grind type.
 						Pause, skip or cancel your subscription with no commitment through our online portal.'
-						number='02'
-					/>
-					<HowCard
-						title='Receive and enjoy!'
-						description='We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+							number='02'
+						/>
+						<HowCard
+							title='Receive and enjoy!'
+							description='We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
 						world-class coffees curated to provide a distinct tasting experience.'
-						number='03'
-					/>
+							number='03'
+						/>
+					</div>
 					<button className='button-primary'>Create Your Plan</button>
 				</div>
 

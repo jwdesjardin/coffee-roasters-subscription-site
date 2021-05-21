@@ -1,3 +1,5 @@
+// HERO
+
 .hero_container {
 	background-image: url(../../public/assets/home/mobile/image-hero-coffeepress.jpg);
 	background-size: cover;
@@ -6,6 +8,9 @@
 	padding: 100px 24px;
 	border-radius: 12px;
 	margin: 40px 24px;
+	@media (min-width: 768px) {
+		background-image: url(../../public/assets/home/tablet/image-hero-coffeepress.jpg);
+	}
 }
 
 .hero_content {
@@ -15,31 +20,56 @@
 	justify-content: space-evenly;
 	color: white;
 	text-align: center;
+	@media (min-width: 768px) {
+		align-items: flex-start;
+		text-align: left;
+		margin-left: 58px;
+	}
 	h1 {
 		font-size: var(--xl-header-fs);
 		margin-bottom: 24px;
+		max-width: 329px;
 	}
 	p {
 		font-size: var(--lg-body-fs);
 		margin-bottom: 39px;
+		max-width: 398px;
 	}
 }
 
+// WHAT
+
 .what_container {
 	margin-bottom: 120px;
+	h2 {
+		margin-top: 120px;
+		margin-bottom: 24px;
+		font-size: var(--xl-header-fs);
+	}
+	@media (min-width: 768px) {
+		h2 {
+			font-size: 96px;
+			transform: translateY(71px);
+			z-index: -1;
+			display: block;
+		}
+	}
 }
+
+// WHY
 
 .why_container {
 	color: var(--light-cream-100);
 	text-align: center;
 	position: relative;
 	margin: 0 24px;
+	padding: 0 24px;
 	h2 {
 		font-size: var(--md-header-fs);
 	}
 	p {
 		font-size: var(--md-body-fs);
-		margin: 24px;
+		max-width: 540px;
 	}
 
 	&::after {
@@ -59,18 +89,67 @@
 .why_textcontent {
 	padding-top: 64px;
 	margin-bottom: 64px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+// HOW
 
 .how_container {
 	margin-bottom: 120px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	h2 {
 		color: var(--medium-grey-400);
 		margin: 120px 0 80px 0;
 		text-align: center;
 	}
 	button {
-		margin: 0 auto;
 		display: block;
 		margin-top: 79px;
+	}
+	@media (min-width: 768px) {
+		margin: 0 40px;
+		align-items: flex-start;
+		h2 {
+			margin-left: 20px;
+		}
+	}
+}
+
+.how_illustration {
+	display: none;
+	align-items: center;
+	justify-content: stretch;
+	width: 90%;
+	margin-left: 20px;
+	.circle {
+		width: 31px;
+		height: 31px;
+		border-radius: 50%;
+		border: 2px solid var(--dark-cyan-600);
+		background-color: transparent;
+	}
+	.line {
+		height: 2px;
+		width: 33%;
+		background-color: var(--light-orange-200);
+	}
+	@media (min-width: 768px) {
+		display: flex;
+	}
+}
+
+.how_card_container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	@media (min-width: 768px) {
+		flex-direction: row;
+		align-items: flex-start;
 	}
 }
