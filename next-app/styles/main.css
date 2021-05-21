@@ -91,6 +91,8 @@ select {
   --sm-link-fs: 12px;
   --page-margin: 24px;
   --page-container: 1200px;
+  --media-tablet: 768px;
+  --media-dektop: 1140px;
 }
 
 @media (min-width: 667px) {
@@ -102,7 +104,7 @@ select {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: var(--media-desktop)) {
   :root {
     --xl-header-fs: 72px;
     --md-header-fs: 40px;

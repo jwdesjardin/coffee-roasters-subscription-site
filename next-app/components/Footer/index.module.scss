@@ -3,7 +3,7 @@
 	@include flex-columnn-center;
 	padding: 54px;
 	margin: 24px var(--page-margin) 72px;
-	@media (min-width: 1140px) {
+	@media (min-width: var(--media-desktop)) {
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 47px 85px;
@@ -18,13 +18,13 @@
 		color: white;
 		margin-bottom: 24px;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: var(--media-tablet)) {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 285px;
 		margin: 32px 0 65px;
 	}
-	@media (min-width: 1140px) {
+	@media (min-width: var(--media-desktop)) {
 		margin: 0;
 
 		a {
@@ -40,7 +40,7 @@
 	align-items: center;
 	margin: 0 auto;
 	width: 120px;
-	@media (min-width: 1140px) {
+	@media (min-width: var(--media-desktop)) {
 		margin: 0;
 	}
 }
