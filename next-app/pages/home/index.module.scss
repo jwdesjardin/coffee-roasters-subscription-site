@@ -7,7 +7,7 @@
 	background-repeat: no-repeat;
 	padding: 100px 24px;
 	border-radius: 12px;
-	margin: 90px var(--page-margin) 0;
+	margin-top: 90px;
 	max-height: 600px;
 	@media (min-width: 768px) {
 		background-image: url(../../public/assets/home/tablet/image-hero-coffeepress.jpg);
@@ -15,15 +15,14 @@
 	@media (min-width: 1140px) {
 		background-image: url(../../public/assets/home/desktop/image-hero-coffeepress.jpg);
 	}
-	z-index: 0;
 }
 
 .hero_content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
-	color: white;
+	justify-content: center;
+	color: var(--light-cream-100);
 	text-align: center;
 	max-width: 398px;
 	margin: 0 auto;
@@ -38,13 +37,16 @@
 	@media (min-width: 768px) {
 		align-items: flex-start;
 		text-align: left;
-		// margin-left: 58px;
 		margin: 0 0 0 58px;
 	}
 	@media (min-width: 1140px) {
 		max-width: 498px;
+		h1 {
+			margin-bottom: 32px;
+		}
 		p {
 			max-width: 445px;
+			margin-bottom: 56px;
 		}
 	}
 }
@@ -52,8 +54,8 @@
 // WHAT
 
 .what_container {
-	margin-bottom: 120px;
 	position: relative;
+	margin-bottom: 120px;
 	margin-top: 120px;
 	h2 {
 		font-size: var(--xl-header-fs);
@@ -67,23 +69,20 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: -80px;
+			top: -70px;
 		}
 	}
 	@media (min-width: 1140px) {
 		h2 {
-			font-size: 148px;
-			top: -130px;
+			font-size: 135px;
+			top: -100px;
 		}
 	}
 }
 
 .what_card_container {
-	margin: 24px var(--page-margin) 0;
-	max-width: var(--page-container);
+	max-width: 1050px;
 	margin: 0 auto;
-	background-color: transparent;
-
 	@media (min-width: 1140px) {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -93,10 +92,9 @@
 // WHY
 
 .why_container {
+	position: relative;
 	color: var(--light-cream-100);
 	text-align: center;
-	position: relative;
-	margin: 0 var(--page-margin);
 	padding: 0 24px;
 	h2 {
 		font-size: var(--md-header-fs);
@@ -146,7 +144,6 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 30px;
-		margin: 0 61px;
 	}
 }
 // HOW
@@ -156,7 +153,7 @@
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 var(--page-margin) 120px;
+	margin-bottom: 120px;
 	max-width: 1045px;
 	h2 {
 		color: var(--medium-grey-400);
@@ -185,9 +182,7 @@
 .how_illustration {
 	display: none;
 	align-items: center;
-	justify-content: stretch;
 	width: 90%;
-
 	.circle {
 		width: 31px;
 		height: 31px;

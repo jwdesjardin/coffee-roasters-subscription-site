@@ -2,6 +2,8 @@
 
 // Colors and Values
 
+@import 'reset';
+
 :root {
 	--dark-greyblue-900: #333d4b;
 	--dark-cyan-600: #0e8784;
@@ -38,13 +40,19 @@
 	}
 }
 
-@import 'reset';
-
 body {
 	background-color: var(--light-cream-100);
+	color: var(--dark-greyblue-900);
 }
 
 // Typography
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1;
+}
 
 h1,
 h2,
@@ -54,11 +62,6 @@ button,
 span {
 	font-family: 'Fraunces', serif;
 	font-weight: 900;
-}
-
-.title-alternate-big {
-	font-size: 72px;
-	text-transform: lowercase;
 }
 
 p,
@@ -85,10 +88,14 @@ a {
 	font-size: 12px;
 	letter-spacing: 1px;
 	cursor: pointer;
+	color: var(--dark-greyblue-900);
+}
+
+section {
+	margin: 0 var(--page-margin);
 }
 
 // buttons
-
 .button-primary {
 	width: 217px;
 	height: 56px;
@@ -100,7 +107,6 @@ a {
 	cursor: pointer;
 	border-radius: 5px;
 	font-size: 18;
-
 	&:hover {
 		background-color: #66d2cf;
 	}
@@ -112,7 +118,6 @@ a {
 //utilities
 .alternate-title {
 	text-align: center;
-
 	text-transform: lowercase;
 	background-image: linear-gradient(0deg, rgba(254, 252, 247, 1) 0%, rgba(131, 136, 143, 1) 100%);
 	background-clip: text;

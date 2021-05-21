@@ -11,10 +11,24 @@ build out pages and use reusable components where applicable
 1. [x] use CSS reset
 1. [x] set style guide styles into utilities
 1. [x] set colors typography
-1. create mobile layout for 3 pages
-   [x] index page
+1. [x] create mobile layout for 3 pages
+       [x] index page
+       [x] about page
+       [x] subscribe page
 1. add media queries for three pages
+   [x] index page
+   [] about page
+   [] subscribe page
 1. add interactivity
+
+refine media queries and process
+
+complete two more pages
+
+add interactivity
+
+consider using CSS utility classes
+BOOTSTRAP or TAILWIND CSS
 
 ## Components
 

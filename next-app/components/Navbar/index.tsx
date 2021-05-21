@@ -6,7 +6,7 @@ export const Navbar = () => {
 	const [hamburgerClicked, setHamburgerClicked] = useState(false)
 
 	return (
-		<div className={styles.container}>
+		<header className={styles.container}>
 			<img
 				className={styles.logo}
 				src='/assets/shared/desktop/logo.svg'
@@ -53,6 +53,6 @@ export const Navbar = () => {
 					<Link href='/subscribe'>Create your plan</Link>
 				</div>
 			</div>
-		</div>
+		</header>
 	)
 }

@@ -153,6 +153,31 @@ export const HeroCard: React.FC<HeroCardProps> = ({ bgURL, title, description })
 }
 ```
 
+## text in background postion absolute
+
+![](./README-assets/ScreenShot3.png)
+
+```css
+.what_container {
+	margin-bottom: 120px;
+	position: relative;
+	margin-top: 203px;
+	h2 {
+		font-size: var(--xl-header-fs);
+	}
+	@media (min-width: 768px) {
+		h2 {
+			font-size: 96px;
+			z-index: -1;
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -80px;
+		}
+	}
+```
+
 ### Continued development
 
 ### Useful resources

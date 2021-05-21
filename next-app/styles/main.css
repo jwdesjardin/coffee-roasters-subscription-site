@@ -1,38 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
-:root {
-  --dark-greyblue-900: #333d4b;
-  --dark-cyan-600: #0e8784;
-  --medium-grey-400: #83888f;
-  --light-orange-200: #fdd6ba;
-  --light-cream-100: #fefcf7;
-  --xl-header-fs: 40px;
-  --md-header-fs: 28px;
-  --xs-header-fs: 24px;
-  --lg-body-fs: 16px;
-  --md-body-fs: 15px;
-  --sm-link-fs: 12px;
-  --page-margin: 24px;
-  --page-container: 1200px;
-}
-
-@media (min-width: 667px) {
-  :root {
-    --xl-header-fs: 48px;
-    --md-header-fs: 32px;
-    --xs-header-fs: 24px;
-    --page-margin: 40px;
-  }
-}
-
-@media (min-width: 1140px) {
-  :root {
-    --xl-header-fs: 72px;
-    --md-header-fs: 40px;
-    --md-body-fs: 16px;
-    --page-margin: 80px;
-  }
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -111,8 +77,50 @@ select {
   }
 }
 
+:root {
+  --dark-greyblue-900: #333d4b;
+  --dark-cyan-600: #0e8784;
+  --medium-grey-400: #83888f;
+  --light-orange-200: #fdd6ba;
+  --light-cream-100: #fefcf7;
+  --xl-header-fs: 40px;
+  --md-header-fs: 28px;
+  --xs-header-fs: 24px;
+  --lg-body-fs: 16px;
+  --md-body-fs: 15px;
+  --sm-link-fs: 12px;
+  --page-margin: 24px;
+  --page-container: 1200px;
+}
+
+@media (min-width: 667px) {
+  :root {
+    --xl-header-fs: 48px;
+    --md-header-fs: 32px;
+    --xs-header-fs: 24px;
+    --page-margin: 40px;
+  }
+}
+
+@media (min-width: 1140px) {
+  :root {
+    --xl-header-fs: 72px;
+    --md-header-fs: 40px;
+    --md-body-fs: 16px;
+    --page-margin: 80px;
+  }
+}
+
 body {
   background-color: var(--light-cream-100);
+  color: var(--dark-greyblue-900);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
 }
 
 h1,
@@ -123,11 +131,6 @@ button,
 span {
   font-family: 'Fraunces', serif;
   font-weight: 900;
-}
-
-.title-alternate-big {
-  font-size: 72px;
-  text-transform: lowercase;
 }
 
 p,
@@ -154,6 +157,11 @@ a {
   font-size: 12px;
   letter-spacing: 1px;
   cursor: pointer;
+  color: var(--dark-greyblue-900);
+}
+
+section {
+  margin: 0 var(--page-margin);
 }
 
 .button-primary {
