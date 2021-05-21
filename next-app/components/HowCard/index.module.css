@@ -1,4 +1,4 @@
-.how_card_container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,12 +17,12 @@
   max-width: 285px;
 }
 
-.how_card_container img {
+.container img {
   margin-bottom: 56px;
 }
 
 @media (min-width: 768px) {
-  .how_card_container {
+  .container {
     text-align: left;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -30,16 +30,16 @@
   }
 }
 
-.how_card_textcontent h3 {
+.textcontent h3 {
   font-size: var(--md-header-fs);
   margin-bottom: 24px;
 }
 
-.how_card_textcontent p {
+.textcontent p {
   font-size: var(--md-body-fs);
 }
 
-.how_card_number {
+.number {
   font-size: 72px;
   color: var(--light-orange-200);
   margin-bottom: 24px;

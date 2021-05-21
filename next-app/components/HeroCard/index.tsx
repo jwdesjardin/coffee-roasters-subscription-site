@@ -11,10 +11,10 @@ interface HeroCardProps {
 export const HeroCard: React.FC<HeroCardProps> = ({ bgURL, title, description }) => {
 	return (
 		<div
-			className={styles.hero_card_container}
+			className={styles.container}
 			style={{ backgroundImage: `url(${bgURL})`, backgroundColor: '#333' }}
 		>
-			<div className={styles.hero_card_textcontent}>
+			<div className={styles.textcontent}>
 				<h1>{title}</h1>
 				<p>{description}</p>
 			</div>

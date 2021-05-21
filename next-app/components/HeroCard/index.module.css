@@ -1,4 +1,4 @@
-.hero_card_container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,18 +20,18 @@
   border-radius: 12px;
 }
 
-.hero_card_textcontent {
+.textcontent {
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
   margin: 24px;
 }
 
-.hero_card_textcontent h1 {
+.textcontent h1 {
   font-size: var(--xl-header-fs);
   margin-bottom: 22px;
 }
 
-.hero_card_textcontent p {
+.textcontent p {
   font-size: var(--md-body-fs);
 }
 /*# sourceMappingURL=index.module.css.map */

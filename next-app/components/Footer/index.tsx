@@ -18,13 +18,13 @@ export const Footer = () => {
 				<Link href='/subscribe'>CREATE YOUR PLAN</Link>
 			</div>
 			<div className={styles.social_container}>
-				<a href='#' className={styles.links}>
+				<a href='#'>
 					<img src='/assets/shared/desktop/icon-facebook.svg' alt='' width='24px' height='24px' />
 				</a>
-				<a href='#' className={styles.links}>
+				<a href='#'>
 					<img src='/assets/shared/desktop/icon-twitter.svg' alt='' width='24px' height='24px' />
 				</a>
-				<a href='#' className={styles.links}>
+				<a href='#'>
 					<img src='/assets/shared/desktop/icon-instagram.svg' alt='' width='24px' height='24px' />
 				</a>
 			</div>

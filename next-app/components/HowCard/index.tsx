@@ -9,9 +9,9 @@ interface HowCardProps {
 
 export const HowCard: React.FC<HowCardProps> = ({ number, title, description }) => {
 	return (
-		<div className={styles.how_card_container}>
-			<span className={styles.how_card_number}>{number}</span>
-			<div className={styles.how_card_textcontent}>
+		<div className={styles.container}>
+			<span className={styles.number}>{number}</span>
+			<div className={styles.textcontent}>
 				<h3>{title}</h3>
 				<p>{description}</p>
 			</div>
