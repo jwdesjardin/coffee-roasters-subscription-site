@@ -5,8 +5,14 @@
 	justify-content: center;
 	text-align: center;
 	margin-bottom: 48px;
+	@media (min-width: 768px) {
+		margin-bottom: 32px;
+	}
 	img {
 		margin-bottom: 24px;
+		@media (min-width: 768px) {
+			margin: 12px 0px;
+		}
 	}
 }
 
@@ -16,8 +22,22 @@
 	h3 {
 		font-size: var(--xs-header-fs);
 		margin-bottom: 16px;
+		@media (min-width: 768px) {
+			margin-bottom: 24px;
+		}
 	}
 	p {
 		font-size: var(--md-body-fs);
+	}
+}
+
+@media (min-width: 768px) {
+	.what_card_container {
+		flex-direction: row;
+		text-align: left;
+		align-items: flex-start;
+	}
+	.what_card_textcontent {
+		margin-left: 35px;
 	}
 }
