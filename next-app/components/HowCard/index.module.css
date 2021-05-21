@@ -20,6 +20,15 @@
   margin-bottom: 56px;
 }
 
+@media (min-width: 768px) {
+  .how_card_container {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .how_card_textcontent h3 {
   font-size: var(--md-header-fs);
   margin-bottom: 24px;
