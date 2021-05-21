@@ -21,7 +21,7 @@ export const Options: React.FC<OptionsProps> = ({ question, options }) => {
 			</div>
 			<div className={styles.options_container}>
 				{options.map((option) => (
-					<Option option={option}></Option>
+					<Option key={option.value} option={option}></Option>
 				))}
 			</div>
 		</div>
