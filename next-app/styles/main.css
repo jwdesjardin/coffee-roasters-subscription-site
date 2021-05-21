@@ -11,6 +11,8 @@
   --lg-body-fs: 16px;
   --md-body-fs: 15px;
   --sm-link-fs: 12px;
+  --page-margin: 24px;
+  --page-container: 1200px;
 }
 
 @media (min-width: 667px) {
@@ -18,14 +20,16 @@
     --xl-header-fs: 48px;
     --md-header-fs: 32px;
     --xs-header-fs: 24px;
+    --page-margin: 40px;
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1140px) {
   :root {
     --xl-header-fs: 72px;
     --md-header-fs: 40px;
     --md-body-fs: 16px;
+    --page-margin: 80px;
   }
 }
 
@@ -107,6 +111,10 @@ select {
   }
 }
 
+body {
+  background-color: var(--light-cream-100);
+}
+
 h1,
 h2,
 h3,
@@ -140,6 +148,14 @@ p {
   letter-spacing: 1;
 }
 
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
 .button-primary {
   width: 217px;
   height: 56px;
@@ -164,13 +180,11 @@ p {
 
 .alternate-title {
   text-align: center;
-  font-size: var(--xl-header-fs);
   text-transform: lowercase;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fefcf7), to(#83888f));
   background-image: linear-gradient(0deg, #fefcf7 0%, #83888f 100%);
   background-clip: text;
   color: transparent;
-  margin-top: 120px;
-  margin-bottom: 24px;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */

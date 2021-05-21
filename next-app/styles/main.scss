@@ -19,20 +19,30 @@
 	--md-body-fs: 15px;
 	--sm-link-fs: 12px;
 
+	//margin and containers
+	--page-margin: 24px;
+	--page-container: 1200px;
+
 	@media (min-width: 667px) {
 		--xl-header-fs: 48px;
 		--md-header-fs: 32px;
 		--xs-header-fs: 24px;
+		--page-margin: 40px;
 	}
 
-	@media (min-width: 1050px) {
+	@media (min-width: 1140px) {
 		--xl-header-fs: 72px;
 		--md-header-fs: 40px;
 		--md-body-fs: 16px;
+		--page-margin: 80px;
 	}
 }
 
 @import 'reset';
+
+body {
+	background-color: var(--light-cream-100);
+}
 
 // Typography
 
@@ -69,6 +79,14 @@ p {
 	letter-spacing: 1;
 }
 
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
 // buttons
 
 .button-primary {
@@ -94,11 +112,10 @@ p {
 //utilities
 .alternate-title {
 	text-align: center;
-	font-size: var(--xl-header-fs);
+
 	text-transform: lowercase;
 	background-image: linear-gradient(0deg, rgba(254, 252, 247, 1) 0%, rgba(131, 136, 143, 1) 100%);
 	background-clip: text;
 	color: transparent;
-	margin-top: 120px;
-	margin-bottom: 24px;
+	opacity: 0.7;
 }
