@@ -13,7 +13,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin: 56px 24px 24px;
+  margin-top: 56px;
+  max-width: 285px;
 }
 
 .how_card_container img {
