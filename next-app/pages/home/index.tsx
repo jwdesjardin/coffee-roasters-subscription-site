@@ -38,30 +38,32 @@ const Home = () => {
 				{/* WHAT */}
 				<div className={styles.what_container}>
 					<h2 className='alternate-title'>Our collection</h2>
-					<WhatCard
-						imageURL='/assets/home/desktop/image-gran-espresso.png'
-						title='Gran Espresso'
-						description='Light and flavorful blend with cocoa and black pepper for an intense experience'
-						altText='gran espresso beans'
-					></WhatCard>
-					<WhatCard
-						imageURL='/assets/home/desktop/image-planalto.png'
-						title='Planalto'
-						description='Brazilian dark roast with rich and velvety body, and hints of fruits and nuts'
-						altText='planalto beans'
-					></WhatCard>
-					<WhatCard
-						imageURL='/assets/home/desktop/image-piccollo.png'
-						title='Piccollo'
-						description='Mild and smooth blend featuring notes of toasted almond and dried cherry'
-						altText='piccollo beans'
-					></WhatCard>
-					<WhatCard
-						imageURL='/assets/home/desktop/image-danche.png'
-						title='Danche'
-						description='Ethiopian hand-harvested blend densely packed with vibrant fruit notes'
-						altText='danche beans'
-					></WhatCard>
+					<div className={styles.what_card_container}>
+						<WhatCard
+							imageURL='/assets/home/desktop/image-gran-espresso.png'
+							title='Gran Espresso'
+							description='Light and flavorful blend with cocoa and black pepper for an intense experience'
+							altText='gran espresso beans'
+						></WhatCard>
+						<WhatCard
+							imageURL='/assets/home/desktop/image-planalto.png'
+							title='Planalto'
+							description='Brazilian dark roast with rich and velvety body, and hints of fruits and nuts'
+							altText='planalto beans'
+						></WhatCard>
+						<WhatCard
+							imageURL='/assets/home/desktop/image-piccollo.png'
+							title='Piccollo'
+							description='Mild and smooth blend featuring notes of toasted almond and dried cherry'
+							altText='piccollo beans'
+						></WhatCard>
+						<WhatCard
+							imageURL='/assets/home/desktop/image-danche.png'
+							title='Danche'
+							description='Ethiopian hand-harvested blend densely packed with vibrant fruit notes'
+							altText='danche beans'
+						></WhatCard>
+					</div>
 				</div>
 
 				{/* WHY Section */}
@@ -74,24 +76,26 @@ const Home = () => {
 							impactful experience on every level.
 						</p>
 					</div>
-					<WhyCard
-						imageURL='/assets/home/desktop/icon-coffee-bean.svg'
-						title='Best quality'
-						description='Discover an endless variety of the world’s best artisan coffee from each of our roasters.'
-						altText='coffe bean icon'
-					></WhyCard>
-					<WhyCard
-						imageURL='/assets/home/desktop/icon-gift.svg'
-						title='Exclusive benefits'
-						description='Special offers and swag when you subscribe, including 30% off your first shipment.'
-						altText='gift icon'
-					></WhyCard>
-					<WhyCard
-						imageURL='/assets/home/desktop/icon-truck.svg'
-						title='Free shipping'
-						description='We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.'
-						altText='truck icon'
-					></WhyCard>
+					<div className={styles.why_card_container}>
+						<WhyCard
+							imageURL='/assets/home/desktop/icon-coffee-bean.svg'
+							title='Best quality'
+							description='Discover an endless variety of the world’s best artisan coffee from each of our roasters.'
+							altText='coffe bean icon'
+						></WhyCard>
+						<WhyCard
+							imageURL='/assets/home/desktop/icon-gift.svg'
+							title='Exclusive benefits'
+							description='Special offers and swag when you subscribe, including 30% off your first shipment.'
+							altText='gift icon'
+						></WhyCard>
+						<WhyCard
+							imageURL='/assets/home/desktop/icon-truck.svg'
+							title='Free shipping'
+							description='We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.'
+							altText='truck icon'
+						></WhyCard>
+					</div>
 				</div>
 
 				{/* HOW Section */}
