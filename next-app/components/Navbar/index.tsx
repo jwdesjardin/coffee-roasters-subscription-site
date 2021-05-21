@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './index.module.css'
+import Link from 'next/link'
 
 export const Navbar = () => {
+	const [hamburgerClicked, setHamburgerClicked] = useState(false)
+
 	return (
 		<div className={styles.container}>
 			<img
@@ -11,12 +14,45 @@ export const Navbar = () => {
 				width='236px'
 				height='26px'
 			/>
-			<img
-				src='/assets/shared/mobile/icon-hamburger.svg'
-				alt='hamburger icon'
-				width='16px'
-				height='16px'
-			/>
+
+			<div className={styles.link_container}>
+				<Link href='/'>Home</Link>
+				<Link href='/about'>About us</Link>
+				<Link href='/subscribe'>Create your plan</Link>
+			</div>
+
+			{hamburgerClicked === true ? (
+				<img
+					src='/assets/shared/mobile/icon-close.svg'
+					alt='hamburger icon'
+					width='16px'
+					height='16px'
+					className={styles.hamburger}
+					onClick={() => setHamburgerClicked(!hamburgerClicked)}
+				/>
+			) : (
+				<img
+					src='/assets/shared/mobile/icon-hamburger.svg'
+					alt='hamburger icon'
+					width='16px'
+					height='16px'
+					className={styles.hamburger}
+					onClick={() => setHamburgerClicked(!hamburgerClicked)}
+				/>
+			)}
+
+			{/* MENU OVERLAY */}
+			{/* only shows when selected and in mobile view */}
+			<div className={styles.menu_container}>
+				<div
+					className={styles.menu_links_container}
+					style={hamburgerClicked ? { display: 'flex' } : { display: 'none' }}
+				>
+					<Link href='/'>Home</Link>
+					<Link href='/about'>About us</Link>
+					<Link href='/subscribe'>Create your plan</Link>
+				</div>
+			</div>
 		</div>
 	)
 }
