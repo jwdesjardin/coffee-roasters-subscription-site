@@ -7,11 +7,22 @@
 	margin-bottom: 24px;
 	background-color: var(--dark-cyan-600);
 	color: var(--light-cream-100);
-	margin: 24px;
 	height: 382px;
 	border-radius: 8px;
 	img {
 		margin-bottom: 56px;
+	}
+	@media (min-width: 768px) {
+		flex-direction: row;
+		max-height: 180px;
+		text-align: left;
+		justify-content: space-evenly;
+		padding: 0 40px;
+		margin: 24px 40px;
+		img {
+			width: 56px;
+			margin: 0 80px 0 0;
+		}
 	}
 }
 
@@ -23,5 +34,11 @@
 	}
 	p {
 		font-size: var(--lg-body-fs);
+	}
+	@media (min-width: 768px) {
+		max-width: none;
+		h3 {
+			margin-bottom: 16px;
+		}
 	}
 }
