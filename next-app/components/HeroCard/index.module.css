@@ -13,7 +13,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin: 90px 24px 24px;
+  margin-top: 90px;
   color: var(--light-cream-100);
   background-size: cover;
   height: 400px;

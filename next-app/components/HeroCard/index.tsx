@@ -5,19 +5,16 @@ import styles from './index.module.css'
 interface HeroCardProps {
 	title: string
 	description: string
-	bgURL: string
+	imageClassName: string
 }
 
-export const HeroCard: React.FC<HeroCardProps> = ({ bgURL, title, description }) => {
+export const HeroCard: React.FC<HeroCardProps> = ({ imageClassName, title, description }) => {
 	return (
-		<div
-			className={styles.container}
-			style={{ backgroundImage: `url(${bgURL})`, backgroundColor: '#333' }}
-		>
+		<section className={styles.container + ` ${imageClassName}`}>
 			<div className={styles.textcontent}>
 				<h1>{title}</h1>
 				<p>{description}</p>
 			</div>
-		</div>
+		</section>
 	)
 }

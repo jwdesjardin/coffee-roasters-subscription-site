@@ -1,9 +1,9 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 .container {
 	@include flex-columnn-center;
 	text-align: center;
-	margin: 90px 24px 24px;
+	margin-top: 90px;
 	color: var(--light-cream-100);
 	background-size: cover;
 	height: 400px;
