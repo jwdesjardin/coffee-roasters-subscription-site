@@ -92,10 +92,10 @@ select {
   --page-margin: 24px;
   --page-container: 1200px;
   --media-tablet: 768px;
-  --media-dektop: 1140px;
+  --media-desktop: 1140px;
 }
 
-@media (min-width: 667px) {
+@media (min-width: 768px) {
   :root {
     --xl-header-fs: 48px;
     --md-header-fs: 32px;
@@ -104,7 +104,7 @@ select {
   }
 }
 
-@media (min-width: var(--media-desktop)) {
+@media (min-width: 1140px) {
   :root {
     --xl-header-fs: 72px;
     --md-header-fs: 40px;

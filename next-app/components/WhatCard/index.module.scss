@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .container {
 	@include flex-columnn-center;
 	text-align: center;
@@ -6,7 +8,7 @@
 	img {
 		margin-bottom: 24px;
 	}
-	@media (min-width: var(--media-tablet)) {
+	@media (min-width: $media-tablet) {
 		margin-bottom: 32px;
 		flex-direction: row;
 		text-align: left;
@@ -15,7 +17,7 @@
 			margin: 12px 0px;
 		}
 	}
-	@media (min-width: var(--media-desktop)) {
+	@media (min-width: $media-desktop) {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
@@ -36,13 +38,13 @@
 	p {
 		font-size: var(--md-body-fs);
 	}
-	@media (min-width: var(--media-tablet)) {
+	@media (min-width: $media-tablet) {
 		margin-left: 35px;
 		p {
 			margin-bottom: 24px;
 		}
 	}
-	@media (min-width: var(--media-desktop)) {
+	@media (min-width: $media-desktop) {
 		margin-left: 0;
 		max-width: 255px;
 	}

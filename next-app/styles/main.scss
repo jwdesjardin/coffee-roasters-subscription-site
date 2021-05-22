@@ -4,6 +4,9 @@
 
 @import 'reset';
 
+$media-tablet: 768px;
+$media-desktop: 1140px;
+
 :root {
 	--dark-greyblue-900: #333d4b;
 	--dark-cyan-600: #0e8784;
@@ -27,16 +30,16 @@
 
 	//media queris
 	--media-tablet: 768px;
-	--media-dektop: 1140px;
+	--media-desktop: 1140px;
 
-	@media (min-width: 667px) {
+	@media (min-width: $media-tablet) {
 		--xl-header-fs: 48px;
 		--md-header-fs: 32px;
 		--xs-header-fs: 24px;
 		--page-margin: 40px;
 	}
 
-	@media (min-width: var(--media-desktop)) {
+	@media (min-width: $media-desktop) {
 		--xl-header-fs: 72px;
 		--md-header-fs: 40px;
 		--md-body-fs: 16px;
@@ -127,13 +130,4 @@ section {
 	background-clip: text;
 	color: transparent;
 	opacity: 0.7;
-}
-
-// mix-in
-
-@mixin flex-columnn-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 }

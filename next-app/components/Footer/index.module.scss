@@ -1,9 +1,11 @@
+@import '../../styles/mixins';
+
 .container {
 	background-color: var(--dark-greyblue-900);
 	@include flex-columnn-center;
 	padding: 54px;
 	margin: 24px var(--page-margin) 72px;
-	@media (min-width: var(--media-desktop)) {
+	@media (min-width: $media-desktop) {
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 47px 85px;
@@ -18,13 +20,13 @@
 		color: white;
 		margin-bottom: 24px;
 	}
-	@media (min-width: var(--media-tablet)) {
+	@media (min-width: $media-tablet) {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 285px;
 		margin: 32px 0 65px;
 	}
-	@media (min-width: var(--media-desktop)) {
+	@media (min-width: $media-desktop) {
 		margin: 0;
 
 		a {
@@ -40,7 +42,7 @@
 	align-items: center;
 	margin: 0 auto;
 	width: 120px;
-	@media (min-width: var(--media-desktop)) {
+	@media (min-width: $media-desktop) {
 		margin: 0;
 	}
 }

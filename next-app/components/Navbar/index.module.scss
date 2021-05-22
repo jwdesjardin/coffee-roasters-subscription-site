@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .container {
 	display: flex;
 	justify-content: space-between;
@@ -14,7 +16,7 @@
 .logo {
 	max-width: 163px;
 	max-height: 18px;
-	@media (min-width: var(--media-tablet)) {
+	@media (min-width: $media-tablet) {
 		max-width: 236px;
 		max-height: 26px;
 	}
@@ -22,7 +24,7 @@
 
 .link_container {
 	display: none;
-	@media (min-width: var(--media-tablet)) {
+	@media (min-width: $media-tablet) {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -32,7 +34,7 @@
 
 .hamburger {
 	display: block;
-	@media (min-width: var(--media-tablet)) {
+	@media (min-width: $media-tablet) {
 		display: none;
 	}
 }

@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .container {
 	@include flex-columnn-center;
 	text-align: center;
