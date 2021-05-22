@@ -19,9 +19,8 @@ export const Options: React.FC<OptionsProps> = ({ question, options, selected, s
 		<div className={styles.container}>
 			<div className={styles.question_container} onClick={() => setModalToggle(!modalToggle)}>
 				<h4>{question}</h4>
-				<button>
-					<ArrowIcon></ArrowIcon>
-				</button>
+
+				<ArrowIcon></ArrowIcon>
 			</div>
 
 			{modalToggle && (

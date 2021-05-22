@@ -1,5 +1,7 @@
 .container {
   margin: 0 24px;
+  width: 100%;
+  margin-bottom: 80px;
 }
 
 .question_container {
@@ -21,23 +23,15 @@
   color: var(--medium-grey-400);
 }
 
-.question_container button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .question_container h4 {
-    margin-right: 2rem;
     max-width: 730px;
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
 .options_container {
   margin-top: 32px;
-  margin-bottom: 110px;
 }
 
 @media (min-width: 768px) {
@@ -50,7 +44,7 @@
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1240px) {
   .options_container {
     width: 730px;
   }
