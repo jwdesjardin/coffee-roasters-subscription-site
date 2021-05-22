@@ -11,13 +11,19 @@ import { Options } from '../../components/Options'
 import { questions } from './questions'
 
 const Subscribe = () => {
-	const [options, setOptions] = useState({
-		question_1: 'Filter',
-		question_2: 'Decaf',
-		question_3: '250g',
-		question_4: 'Cafatiere',
-		question_5: 'Every Week',
-	})
+	// const [options, setOptions] = useState({
+	// 	question_1: 'Filter',
+	// 	question_2: 'Decaf',
+	// 	question_3: '250g',
+	// 	question_4: 'Cafetiére',
+	// 	question_5: 'Every week',
+	// })
+
+	const [q1, setQ1] = useState('')
+	const [q2, setQ2] = useState('')
+	const [q3, setQ3] = useState('')
+	const [q4, setQ4] = useState('')
+	const [q5, setQ5] = useState('')
 
 	return (
 		<div className=''>
@@ -36,54 +42,119 @@ const Subscribe = () => {
 					title='Create a plan'
 					description='Build a subscription plan that best fits your needs. We offer an assortment of the best 
           artisan coffees from around the globe delivered fresh to your door.'
-					bgURL='/assets/plan/mobile/image-hero-blackcup.jpg'
+					imageClassName='white-cup-image'
 				></HeroCard>
 
 				{/* Instructions */}
-				<div className={styles.instructions_container}>
-					<HowCard
-						title='Pick your coffee'
-						description='Select from our evolving range of artisan coffees. Our beans are ethically
+				<section className={styles.how_container}>
+					{/* How illustration */}
+					<div className={styles.how_illustration}>
+						<div className={styles.circle}></div>
+						<div className={styles.line}></div>
+						<div className={styles.circle}></div>
+						<div className={styles.line}></div>
+						<div className={styles.circle}></div>
+					</div>
+					<div className={styles.how_card_container}>
+						<HowCard
+							title='Pick your coffee'
+							description='Select from our evolving range of artisan coffees. Our beans are ethically
 						sourced and we pay fair prices for them. There are new coffees in all profiles
 						every month for you to try out.'
-						number='01'
-					/>
-					<HowCard
-						title='Choose the frequency'
-						description='Customize your order frequency, quantity, even your roast style and grind type.
+							number='01'
+						/>
+						<HowCard
+							title='Choose the frequency'
+							description='Customize your order frequency, quantity, even your roast style and grind type.
 						Pause, skip or cancel your subscription with no commitment through our online portal.'
-						number='02'
-					/>
-					<HowCard
-						title='Receive and enjoy!'
-						description='We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+							number='02'
+						/>
+						<HowCard
+							title='Receive and enjoy!'
+							description='We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
 						world-class coffees curated to provide a distinct tasting experience.'
-						number='03'
-					/>
-				</div>
+							number='03'
+						/>
+					</div>
+				</section>
 
 				{/* OPTIONS */}
-				<Options question='How do you drink your coffee?' options={questions[0]}></Options>
-				<Options question='What type of coffee?' options={questions[1]}></Options>
-				<Options question='How much would you like?' options={questions[2]}></Options>
-				<Options question='Want us to grind them?' options={questions[3]}></Options>
-				<Options question='How often should we deliver?' options={questions[4]}></Options>
+				<section className={styles.options_container}>
+					<aside className={styles.options_menu}>
+						<ul>
+							<li>
+								<span>01</span> Preferences
+							</li>
+							<li>
+								<span>02</span> Bean Type
+							</li>
+							<li>
+								<span>03</span> Quantity
+							</li>
+							<li>
+								<span>04</span> Grind Options
+							</li>
+							<li>
+								<span>05</span> Deliveries
+							</li>
+						</ul>
+					</aside>
+					<div className={styles.options_card_container}>
+						<Options
+							question='How do you drink your coffee?'
+							options={questions[0]}
+							setSelected={setQ1}
+							selected={q1}
+						></Options>
+						<Options
+							setSelected={setQ1}
+							selected={q1}
+							question='What type of coffee?'
+							options={questions[1]}
+						></Options>
+						<Options
+							setSelected={setQ1}
+							selected={q1}
+							question='How much would you like?'
+							options={questions[2]}
+						></Options>
+						<Options
+							setSelected={setQ1}
+							selected={q1}
+							question='Want us to grind them?'
+							options={questions[3]}
+						></Options>
+						<Options
+							setSelected={setQ1}
+							selected={q1}
+							question='How often should we deliver?'
+							options={questions[4]}
+						></Options>
+
+						<div className={styles.summary_container}>
+							<h2>Order Summary</h2>
+							<p>
+								“I drink coffee <span className={styles.textHighlight}>{q1}</span>, with a{' '}
+								<span className={styles.textHighlight}>{q2}</span> type of bean.{' '}
+								<span className={styles.textHighlight}>{q3}</span> ground ala{' '}
+								<span className={styles.textHighlight}>{q4}</span>, sent to me{' '}
+								<span className={styles.textHighlight}>{q5}</span>.”
+							</p>
+							{/* <p>
+								“I drink coffee <span className={styles.textHighlight}>{options.question_1}</span>,
+								with a <span className={styles.textHighlight}>{options.question_2}</span> type of
+								bean. <span className={styles.textHighlight}>{options.question_3}</span> ground ala{' '}
+								<span className={styles.textHighlight}>{options.question_4}</span>, sent to me{' '}
+								<span className={styles.textHighlight}>{options.question_5}</span>.”
+							</p> */}
+						</div>
+
+						<button className='button-primary'>Create my plan!</button>
+					</div>
+				</section>
 
 				{/* SUMMARY */}
-				<div className={styles.createplan_container}>
-					<div className={styles.summary_container}>
-						<h2>Order Summary</h2>
-						<p>
-							“I drink coffee <span className={styles.textHighlight}>{options.question_1}</span>,
-							with a <span className={styles.textHighlight}>{options.question_2}</span> type of
-							bean. <span className={styles.textHighlight}>{options.question_3}</span> ground ala{' '}
-							<span className={styles.textHighlight}>{options.question_4}</span>, sent to me{' '}
-							<span className={styles.textHighlight}>{options.question_5}</span>.”
-						</p>
-					</div>
-
-					<button className='button-primary'>Create my plan!</button>
-				</div>
+				<section className={styles.createplan_container}></section>
 				<Footer></Footer>
 			</main>
 		</div>

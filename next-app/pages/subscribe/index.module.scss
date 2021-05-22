@@ -1,9 +1,83 @@
+@import '../../styles/mixins';
+
 .instructions_container {
 	background-color: var(--dark-greyblue-900);
 	color: var(--light-cream-100);
 	border-radius: 12px;
 	padding: 24px 0 56px;
 	margin: 120px 0;
+}
+
+.how_container {
+	@include flex-columnn-center;
+	background-color: var(--dark-greyblue-900);
+	color: var(--light-cream-100);
+	border-radius: 12px;
+	padding: 24px 0 56px;
+	margin: 120px 0;
+	h2 {
+		color: var(--medium-grey-400);
+		margin: 96px 0 24px 0;
+		text-align: center;
+	}
+	button {
+		display: block;
+		margin-top: 79px;
+	}
+	@media (min-width: $media-tablet) {
+		align-items: flex-start;
+		margin-bottom: 144px;
+		padding: 100px 40px 70px;
+		h2 {
+			margin: 144px 0 40px 0;
+		}
+	}
+	@media (min-width: $media-desktop) {
+		margin: 0 var(--page-margin) 200px;
+		padding: 100px;
+		h2 {
+			margin: 200px 0 80px 0;
+		}
+	}
+}
+
+.how_illustration {
+	display: none;
+	align-items: center;
+	width: 90%;
+	.circle {
+		width: 31px;
+		height: 31px;
+		border-radius: 50%;
+		border: 2px solid var(--dark-cyan-600);
+		background-color: transparent;
+	}
+	.line {
+		height: 2px;
+		width: 27vw;
+		background-color: var(--light-orange-200);
+	}
+	@media (min-width: $media-tablet) {
+		display: flex;
+	}
+	@media (min-width: $media-desktop) {
+		.line {
+			width: 350px;
+		}
+	}
+}
+
+.how_card_container {
+	@include flex-columnn-center;
+	@media (min-width: $media-tablet) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 30px;
+		align-items: flex-start;
+	}
+	@media (min-width: $media-desktop) {
+		grid-column-gap: 95px;
+	}
 }
 
 .summary_container {
@@ -31,13 +105,47 @@
 	}
 }
 
-.createplan_container {
+.options_container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	margin-bottom: 120px;
+}
+.options_menu {
+	display: none;
+	@media (min-width: $media-desktop) {
+		@include flex-columnn-center;
+		width: 25%;
+		align-items: flex-start;
+		justify-content: flex-start;
+		color: var(--medium-grey-400);
+		ul {
+			list-style: none;
+			font-size: 24px;
+			li {
+				padding-bottom: 24px;
+				border-bottom: 1px solid var(--medium-grey-400);
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+.options_card_container {
+	@include flex-columnn-center;
 	button {
 		margin-top: 56px;
+	}
+	@media (min-width: $media-tablet) {
+		.summary_container {
+			max-width: 689px;
+			padding: 27px 44px;
+		}
+	}
+	@media (min-width: $media-desktop) {
+		.summary_container {
+			max-width: 730px;
+			padding: 47px 64px;
+		}
+		button {
+			margin-left: auto;
+		}
 	}
 }
