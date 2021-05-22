@@ -8,9 +8,11 @@ import styles from './index.module.css'
 interface OptionsProps {
 	question: string
 	options: option[]
+	selected: string
+	setSelected: React.Dispatch<React.SetStateAction<string>>
 }
 
-export const Options: React.FC<OptionsProps> = ({ question, options }) => {
+export const Options: React.FC<OptionsProps> = ({ question, options, selected, setSelected }) => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.question_container}>
@@ -21,7 +23,12 @@ export const Options: React.FC<OptionsProps> = ({ question, options }) => {
 			</div>
 			<div className={styles.options_container}>
 				{options.map((option) => (
-					<Option key={option.value} option={option}></Option>
+					<Option
+						setSelected={setSelected}
+						key={option.value}
+						option={option}
+						selected={selected === option.value}
+					></Option>
 				))}
 			</div>
 		</div>
@@ -32,11 +39,18 @@ export const Options: React.FC<OptionsProps> = ({ question, options }) => {
 
 interface OptionProps {
 	option: option
+	selected: boolean
+	setSelected: React.Dispatch<React.SetStateAction<string>>
 }
 
-const Option: React.FC<OptionProps> = ({ option }) => {
+const Option: React.FC<OptionProps> = ({ option, selected, setSelected }) => {
 	return (
-		<div className={styles.option_container}>
+		<div
+			className={
+				selected ? `${styles.option_container} ${styles.selected}` : styles.option_container
+			}
+			onClick={() => setSelected(option.value)}
+		>
 			<h4>{option.value}</h4>
 			<p>{option.description}</p>
 		</div>
