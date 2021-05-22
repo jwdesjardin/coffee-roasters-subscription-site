@@ -12,6 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .question_container h4 {
@@ -23,6 +24,7 @@
 .question_container button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

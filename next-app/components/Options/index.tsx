@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { option } from '../../types'
 import { ArrowIcon } from '../Icons'
 import styles from './index.module.css'
@@ -13,24 +13,29 @@ interface OptionsProps {
 }
 
 export const Options: React.FC<OptionsProps> = ({ question, options, selected, setSelected }) => {
+	const [modalToggle, setModalToggle] = useState(false)
+
 	return (
 		<div className={styles.container}>
-			<div className={styles.question_container}>
+			<div className={styles.question_container} onClick={() => setModalToggle(!modalToggle)}>
 				<h4>{question}</h4>
 				<button>
 					<ArrowIcon></ArrowIcon>
 				</button>
 			</div>
-			<div className={styles.options_container}>
-				{options.map((option) => (
-					<Option
-						setSelected={setSelected}
-						key={option.value}
-						option={option}
-						selected={selected === option.value}
-					></Option>
-				))}
-			</div>
+
+			{modalToggle && (
+				<div className={styles.options_container}>
+					{options.map((option) => (
+						<Option
+							setSelected={setSelected}
+							key={option.value}
+							option={option}
+							selected={selected === option.value}
+						></Option>
+					))}
+				</div>
+			)}
 		</div>
 	)
 }
