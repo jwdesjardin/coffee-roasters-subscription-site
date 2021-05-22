@@ -1,11 +1,3 @@
-.instructions_container {
-  background-color: var(--dark-greyblue-900);
-  color: var(--light-cream-100);
-  border-radius: 12px;
-  padding: 24px 0 56px;
-  margin: 120px 0;
-}
-
 .how_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,7 +35,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 144px;
+    margin: 120px 0 144px;
     padding: 100px 40px 70px;
   }
   .how_container h2 {
@@ -53,7 +45,8 @@
 
 @media (min-width: 1240px) {
   .how_container {
-    margin: 0 var(--page-margin) 200px;
+    margin-top: 120px;
+    margin-bottom: 200px;
     padding: 100px;
   }
   .how_container h2 {

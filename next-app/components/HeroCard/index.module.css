@@ -20,10 +20,27 @@
   border-radius: 12px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    padding: 58px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    height: 450px;
+  }
+}
+
 .textcontent {
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
   margin: 24px;
+  max-width: 398px;
 }
 
 .textcontent h1 {
@@ -33,5 +50,17 @@
 
 .textcontent p {
   font-size: var(--md-body-fs);
+}
+
+@media (min-width: 1240px) {
+  .textcontent {
+    max-width: none;
+  }
+  .textcontent h1 {
+    margin-bottom: 32px;
+  }
+  .textcontent p {
+    max-width: 445px;
+  }
 }
 /*# sourceMappingURL=index.module.css.map */

@@ -104,7 +104,7 @@ select {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1240px) {
   :root {
     --xl-header-fs: 72px;
     --md-header-fs: 40px;
@@ -209,7 +209,7 @@ section {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1240px) {
   .white-cup-image {
     background-image: url(../public/assets/about/desktop/image-hero-whitecup.jpg);
   }
@@ -225,7 +225,7 @@ section {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1240px) {
   .black-cup-image {
     background-image: url(../public/assets/plan/desktop/image-hero-blackcup.jpg);
   }
