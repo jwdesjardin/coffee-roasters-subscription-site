@@ -134,11 +134,11 @@ const Subscribe = () => {
 						<div className={styles.summary_container}>
 							<h2>Order Summary</h2>
 							<p>
-								“I drink coffee <span className={styles.textHighlight}>{q1}</span>, with a{' '}
-								<span className={styles.textHighlight}>{q2}</span> type of bean.{' '}
-								<span className={styles.textHighlight}>{q3}</span> ground ala{' '}
-								<span className={styles.textHighlight}>{q4}</span>, sent to me{' '}
-								<span className={styles.textHighlight}>{q5}</span>.”
+								“I drink coffee <span className={styles.textHighlight}>{q1 ? q1 : '______'}</span>,
+								with a <span className={styles.textHighlight}>{q2 ? q2 : '______'}</span> type of
+								bean. <span className={styles.textHighlight}>{q3 ? q3 : '______'}</span> ground ala{' '}
+								<span className={styles.textHighlight}>{q4 ? q4 : '______'}</span>, sent to me{' '}
+								<span className={styles.textHighlight}>{q5 ? q5 : '______'}</span>.”
 							</p>
 							{/* <p>
 								“I drink coffee <span className={styles.textHighlight}>{options.question_1}</span>,
