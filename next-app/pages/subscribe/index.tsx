@@ -82,19 +82,19 @@ const Subscribe = () => {
 				<section className={styles.options_container}>
 					<aside className={styles.options_menu}>
 						<ul>
-							<li>
+							<li className={q1 === '' ? '' : 'li-selected'}>
 								<span>01</span> Preferences
 							</li>
-							<li>
+							<li className={q2 === '' ? '' : 'li-selected'}>
 								<span>02</span> Bean Type
 							</li>
-							<li>
+							<li className={q3 === '' ? '' : 'li-selected'}>
 								<span>03</span> Quantity
 							</li>
-							<li>
+							<li className={q4 === '' ? '' : 'li-selected'}>
 								<span>04</span> Grind Options
 							</li>
-							<li>
+							<li className={q5 === '' ? '' : 'li-selected'}>
 								<span>05</span> Deliveries
 							</li>
 						</ul>
@@ -107,26 +107,26 @@ const Subscribe = () => {
 							selected={q1}
 						></Options>
 						<Options
-							setSelected={setQ1}
-							selected={q1}
+							setSelected={setQ2}
+							selected={q2}
 							question='What type of coffee?'
 							options={questions[1]}
 						></Options>
 						<Options
-							setSelected={setQ1}
-							selected={q1}
+							setSelected={setQ3}
+							selected={q3}
 							question='How much would you like?'
 							options={questions[2]}
 						></Options>
 						<Options
-							setSelected={setQ1}
-							selected={q1}
+							setSelected={setQ4}
+							selected={q4}
 							question='Want us to grind them?'
 							options={questions[3]}
 						></Options>
 						<Options
-							setSelected={setQ1}
-							selected={q1}
+							setSelected={setQ5}
+							selected={q5}
 							question='How often should we deliver?'
 							options={questions[4]}
 						></Options>

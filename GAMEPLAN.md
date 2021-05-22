@@ -17,9 +17,15 @@ build out pages and use reusable components where applicable
        [x] subscribe page
 1. add media queries for three pages
    [x] index page
-   [] about page
-   [] subscribe page
+   [x] about page
+   [x] subscribe page
 1. add interactivity
+   [x] add state to subsriptions page
+   [x] add click event to update state
+   [x] read state into summary
+   [] create summary modal with state
+   [] read state into aside menu
+   [] add toggle dropdown to questions
 
 refine media queries and process
 

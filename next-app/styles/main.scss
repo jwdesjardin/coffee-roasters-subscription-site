@@ -152,3 +152,11 @@ section {
 		background-image: url(../public/assets/plan/desktop/image-hero-blackcup.jpg);
 	}
 }
+
+.li-selected {
+	color: var(--dark-greyblue-900);
+	border-bottom: 1px solid var(--dark-greyblue-900);
+	span {
+		color: var(--dark-cyan-600);
+	}
+}
