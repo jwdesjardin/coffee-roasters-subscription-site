@@ -43,11 +43,11 @@ export const Navbar = () => {
 
 			{/* MENU OVERLAY */}
 			{/* only shows when selected and in mobile view */}
-			<div className={styles.menu_container}>
-				<div
-					className={styles.menu_links_container}
-					style={hamburgerClicked ? { display: 'flex' } : { display: 'none' }}
-				>
+			<div
+				className={styles.menu_container}
+				style={hamburgerClicked ? { display: 'block' } : { display: 'none' }}
+			>
+				<div className={styles.menu_links_container}>
 					<Link href='/'>Home</Link>
 					<Link href='/about'>About us</Link>
 					<Link href='/subscribe'>Create your plan</Link>
