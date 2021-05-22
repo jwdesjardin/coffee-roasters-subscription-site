@@ -18,12 +18,19 @@
 }
 
 .question_container h4 {
-  font-size: 32px;
-  max-width: 240px;
+  font-size: 24px;
+  max-width: 270px;
   color: var(--medium-grey-400);
 }
 
 @media (min-width: 768px) {
+  .question_container h4 {
+    max-width: 730px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1140px) {
   .question_container h4 {
     max-width: 730px;
     font-size: 40px;
@@ -44,7 +51,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .options_container {
     width: 730px;
   }

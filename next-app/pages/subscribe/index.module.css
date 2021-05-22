@@ -43,11 +43,13 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .how_container {
     margin-top: 120px;
     margin-bottom: 200px;
     padding: 100px;
+    margin: 120px auto 200px;
+    max-width: 1280px;
   }
   .how_container h2 {
     margin: 200px 0 80px 0;
@@ -84,7 +86,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .how_illustration .line {
     width: 350px;
   }
@@ -119,7 +121,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .how_card_container {
     grid-column-gap: 95px;
   }
@@ -127,7 +129,6 @@
 
 .summary_container {
   background-color: var(--dark-greyblue-900);
-  margin: 24px;
   padding: 32px 24px;
   border-radius: 8px;
 }
@@ -164,7 +165,7 @@
   display: none;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .options_menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -227,7 +228,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .options_card_container .summary_container {
     max-width: 730px;
     padding: 47px 64px;

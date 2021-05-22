@@ -17,7 +17,7 @@
   margin: 24px var(--page-margin) 72px;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -67,7 +67,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .links_container {
     margin: 0;
   }
@@ -94,7 +94,7 @@
   width: 120px;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .social_container {
     margin: 0;
   }

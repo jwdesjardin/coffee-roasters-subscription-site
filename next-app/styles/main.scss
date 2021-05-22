@@ -5,7 +5,7 @@
 @import 'reset';
 
 $media-tablet: 768px;
-$media-desktop: 1240px;
+$media-desktop: 1140px;
 
 :root {
 	--dark-greyblue-900: #333d4b;
@@ -101,6 +101,10 @@ a {
 
 section {
 	margin: 0 var(--page-margin);
+	@media (min-width: 1280px) {
+		margin: 0 auto;
+		max-width: 1280px;
+	}
 }
 
 // buttons

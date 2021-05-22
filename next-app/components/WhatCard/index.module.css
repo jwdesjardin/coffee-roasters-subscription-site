@@ -37,7 +37,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .textcontent {
     margin-left: 0;
     max-width: 255px;

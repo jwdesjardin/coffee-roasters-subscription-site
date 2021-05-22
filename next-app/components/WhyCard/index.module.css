@@ -35,7 +35,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,7 +93,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .imagebox {
     width: 72px;
     margin: 0 0 56px;

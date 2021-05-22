@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .container {
     height: 450px;
   }
@@ -52,7 +52,7 @@
   font-size: var(--md-body-fs);
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .textcontent {
     max-width: none;
   }

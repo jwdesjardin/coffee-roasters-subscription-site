@@ -104,7 +104,7 @@ select {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   :root {
     --xl-header-fs: 72px;
     --md-header-fs: 40px;
@@ -167,6 +167,13 @@ section {
   margin: 0 var(--page-margin);
 }
 
+@media (min-width: 1280px) {
+  section {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
 .button-primary {
   width: 217px;
   height: 56px;
@@ -209,7 +216,7 @@ section {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .white-cup-image {
     background-image: url(../public/assets/about/desktop/image-hero-whitecup.jpg);
   }
@@ -225,7 +232,7 @@ section {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .black-cup-image {
     background-image: url(../public/assets/plan/desktop/image-hero-blackcup.jpg);
   }

@@ -12,14 +12,19 @@
 	align-items: center;
 	cursor: pointer;
 	h4 {
-		font-size: 32px;
-		max-width: 240px;
+		font-size: 24px;
+		max-width: 270px;
 		color: var(--medium-grey-400);
 	}
 
 	@media (min-width: $media-tablet) {
 		h4 {
-			// margin-right: 2rem;
+			max-width: 730px;
+			font-size: 32px;
+		}
+	}
+	@media (min-width: $media-desktop) {
+		h4 {
 			max-width: 730px;
 			font-size: 40px;
 		}

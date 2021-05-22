@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .hero_container {
     background-image: url(../../public/assets/home/desktop/image-hero-coffeepress.jpg);
   }
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .hero_content {
     max-width: 498px;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .what_container h2 {
     font-size: 135px;
     top: -100px;
@@ -111,7 +111,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .what_card_container {
     display: -ms-grid;
     display: grid;
@@ -156,7 +156,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .why_container::after {
     height: 77%;
   }
@@ -186,13 +186,13 @@
           flex-direction: column;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .why_textcontent {
     margin-bottom: 86px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .why_card_container {
     display: -ms-grid;
     display: grid;
@@ -243,7 +243,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .how_container {
     margin: 0 auto 200px;
   }
@@ -282,7 +282,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .how_illustration .line {
     width: 350px;
   }
@@ -317,7 +317,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1140px) {
   .how_card_container {
     grid-column-gap: 95px;
   }
