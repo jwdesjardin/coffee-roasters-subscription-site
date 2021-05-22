@@ -1,9 +1,13 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 .container {
 	@include flex-columnn-center;
 	text-align: center;
 	margin-bottom: 80px;
+	@media (min-width: $media-tablet) {
+		text-align: left;
+		align-items: flex-start;
+	}
 }
 .imagebox {
 	margin-bottom: 47px;

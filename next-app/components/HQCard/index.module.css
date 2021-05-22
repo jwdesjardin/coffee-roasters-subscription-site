@@ -16,6 +16,15 @@
   margin-bottom: 80px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .imagebox {
   margin-bottom: 47px;
 }
