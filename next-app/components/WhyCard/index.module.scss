@@ -18,6 +18,7 @@
 	}
 	@media (min-width: $media-desktop) {
 		@include flex-columnn-center;
+		text-align: center;
 		max-height: 382px;
 		margin: 0;
 	}
