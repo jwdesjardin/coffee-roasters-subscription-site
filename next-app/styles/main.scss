@@ -66,7 +66,8 @@ h2,
 h3,
 h4,
 button,
-span {
+span,
+li {
 	font-family: 'Fraunces', serif;
 	font-weight: 900;
 }
@@ -130,4 +131,24 @@ section {
 	background-clip: text;
 	color: transparent;
 	opacity: 0.7;
+}
+
+.white-cup-image {
+	background-image: url(../public/assets/about/mobile/image-hero-whitecup.jpg);
+	@media (min-width: $media-tablet) {
+		background-image: url(../public/assets/about/tablet/image-hero-whitecup.jpg);
+	}
+	@media (min-width: $media-desktop) {
+		background-image: url(../public/assets/about/desktop/image-hero-whitecup.jpg);
+	}
+}
+
+.black-cup-image {
+	background-image: url(../public/assets/plan/mobile/image-hero-blackcup.jpg);
+	@media (min-width: $media-tablet) {
+		background-image: url(../public/assets/plan/tablet/image-hero-blackcup.jpg);
+	}
+	@media (min-width: $media-desktop) {
+		background-image: url(../public/assets/plan/desktop/image-hero-blackcup.jpg);
+	}
 }
