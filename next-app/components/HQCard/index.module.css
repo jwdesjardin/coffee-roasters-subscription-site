@@ -29,6 +29,10 @@
   margin-bottom: 47px;
 }
 
+.textcontent {
+  max-width: 255px;
+}
+
 .textcontent h2 {
   font-size: var(--md-header-fs);
   margin-bottom: 22px;

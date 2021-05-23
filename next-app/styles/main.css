@@ -164,7 +164,7 @@ section {
   margin: 0 var(--page-margin);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   section {
     margin: 0 auto;
     max-width: 1280px;

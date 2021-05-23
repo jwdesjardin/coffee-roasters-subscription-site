@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 import { Navbar } from '../../components/Navbar'
@@ -30,7 +31,9 @@ const Home = () => {
 							Start your mornings with the world’s best coffees. Try our expertly curated artisan
 							coffees from our best roasters delivered directly to your door, at your schedule.
 						</p>
-						<button className='button-primary'>Create your plan</button>
+						<Link href='/subscribe'>
+							<button className='button-primary'>Create your plan</button>
+						</Link>
 					</div>
 				</section>
 
@@ -131,7 +134,9 @@ const Home = () => {
 							number='03'
 						/>
 					</div>
-					<button className='button-primary'>Create Your Plan</button>
+					<Link href='/subscribe'>
+						<button className='button-primary'>Create Your Plan</button>
+					</Link>
 				</section>
 
 				<Footer></Footer>
