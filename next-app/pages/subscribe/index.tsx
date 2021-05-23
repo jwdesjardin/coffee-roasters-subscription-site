@@ -31,9 +31,27 @@ const Subscribe = () => {
 		console.log('clicked', e.target)
 
 		//if the current target is the overlay close the modal
+
 		if (e.target.id === 'overlay') {
-			toggleModal(false)
+			closeModal()
 		}
+	}
+
+	const showModal = () => {
+		toggleModal(true)
+		document.body.style.top = `-${window.scrollY}px`
+		document.body.style.position = 'fixed'
+		document.body.style.width = '100vw'
+		console.log(document.body.style.top)
+	}
+
+	const closeModal = () => {
+		const body = document.body
+		const scrollY = body.style.top
+		body.style.position = ''
+		body.style.top = ''
+		window.scrollTo(0, parseInt(scrollY || '0') * -1)
+		toggleModal(false)
 	}
 
 	return (
@@ -44,7 +62,7 @@ const Subscribe = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className={modal ? `${styles.body_modal_open}` : ''}>
+			<main>
 				{/* HEADER */}
 				<Navbar></Navbar>
 
@@ -163,7 +181,7 @@ const Subscribe = () => {
 						<button
 							disabled={q1 === '' || q2 === '' || q3 === '' || q4 === '' || q5 === ''}
 							className='button-primary'
-							onClick={() => toggleModal(true)}
+							onClick={showModal}
 						>
 							Create my plan!
 						</button>

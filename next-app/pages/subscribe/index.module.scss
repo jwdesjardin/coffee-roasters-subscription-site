@@ -2,14 +2,13 @@
 
 // hacky workaround no scrolling when menu is open
 // does not save scroll placement - Restarts at top on mocal close
-.body_modal_open {
-	position: fixed;
-	@media (min-width: $media-tablet) {
-		height: 100vh;
-		overflow-y: hidden;
-		padding-right: 15px;
-	}
-}
+// .body_modal_open {
+// 	position: fixed;
+// 	@media (min-width: $media-tablet) {
+// 		height: 100vh;
+// 		overflow-y: hidden;
+// 	}
+// }
 
 .how_container {
 	@include flex-columnn-center;
