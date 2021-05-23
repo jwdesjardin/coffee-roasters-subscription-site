@@ -25,6 +25,17 @@ const Subscribe = () => {
 	const [q4, setQ4] = useState('')
 	const [q5, setQ5] = useState('')
 
+	const [modal, toggleModal] = useState(false)
+
+	const overlay_click_listener: React.MouseEventHandler<HTMLDivElement> = (e) => {
+		console.log('clicked', e.target)
+
+		//if the current target is the overlay close the modal
+		if (e.target.id === 'overlay') {
+			toggleModal(false)
+		}
+	}
+
 	return (
 		<div className=''>
 			<Head>
@@ -152,6 +163,7 @@ const Subscribe = () => {
 						<button
 							disabled={q1 === '' || q2 === '' || q3 === '' || q4 === '' || q5 === ''}
 							className='button-primary'
+							onClick={() => toggleModal(true)}
 						>
 							Create my plan!
 						</button>
@@ -160,31 +172,38 @@ const Subscribe = () => {
 
 				{/* MODAL */}
 
-				<div className={styles.modal_page_container}>
-					<div className={styles.modal_container}>
-						<div className={styles.modal_header}>
-							<h2>Order Summary</h2>
-						</div>
-						<div className={styles.modal_content}>
-							<p className={styles.modal_plan}>
-								“I drink coffee <span className={styles.textHighlight}>{q1 ? q1 : '______'}</span>,
-								with a <span className={styles.textHighlight}>{q2 ? q2 : '______'}</span> type of
-								bean. <span className={styles.textHighlight}>{q3 ? q3 : '______'}</span> ground ala{' '}
-								<span className={styles.textHighlight}>{q4 ? q4 : '______'}</span>, sent to me{' '}
-								<span className={styles.textHighlight}>{q5 ? q5 : '______'}</span>.”
-							</p>
-							<p className={styles.modal_details}>
-								Is this correct? You can proceed to checkout or go back to plan selection if
-								something is off. Subscription discount codes can also be redeemed at the checkout.{' '}
-							</p>
-							<div className={`${styles.modal_checkout}`}>
-								<p>$14.00/ mo</p>
-								<button className='button-primary'>Checkout</button>
+				{modal && (
+					<div
+						id='overlay'
+						className={styles.modal_page_container}
+						onClick={overlay_click_listener}
+					>
+						<div className={styles.modal_container}>
+							<div className={styles.modal_header}>
+								<h2>Order Summary</h2>
 							</div>
-							<button className='button-primary mobileOnly'>Checkout - $14.00/ mo</button>
+							<div className={styles.modal_content}>
+								<p className={styles.modal_plan}>
+									“I drink coffee <span className={styles.textHighlight}>{q1 ? q1 : '______'}</span>
+									, with a <span className={styles.textHighlight}>{q2 ? q2 : '______'}</span> type
+									of bean. <span className={styles.textHighlight}>{q3 ? q3 : '______'}</span> ground
+									ala <span className={styles.textHighlight}>{q4 ? q4 : '______'}</span>, sent to me{' '}
+									<span className={styles.textHighlight}>{q5 ? q5 : '______'}</span>.”
+								</p>
+								<p className={styles.modal_details}>
+									Is this correct? You can proceed to checkout or go back to plan selection if
+									something is off. Subscription discount codes can also be redeemed at the
+									checkout.{' '}
+								</p>
+								<div className={`${styles.modal_checkout}`}>
+									<p>$14.00/ mo</p>
+									<button className='button-primary'>Checkout</button>
+								</div>
+								<button className='button-primary mobileOnly'>Checkout - $14.00/ mo</button>
+							</div>
 						</div>
 					</div>
-				</div>
+				)}
 
 				<Footer></Footer>
 			</main>
