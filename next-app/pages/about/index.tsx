@@ -28,7 +28,7 @@ const About = () => {
 					coffee from around the world. We have since been dedicated to bring the perfect cup - from 
 					bean to brew - in every shipment.'
 					title='About us'
-					imageClassName='black-cup-image'
+					imageClassName='white-cup-image'
 				></HeroCard>
 
 				{/* COMMITMENT */}

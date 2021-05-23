@@ -149,7 +149,12 @@ const Subscribe = () => {
 							</p> */}
 						</div>
 
-						<button className='button-primary'>Create my plan!</button>
+						<button
+							disabled={q1 === '' || q2 === '' || q3 === '' || q4 === '' || q5 === ''}
+							className='button-primary'
+						>
+							Create my plan!
+						</button>
 					</div>
 				</section>
 
