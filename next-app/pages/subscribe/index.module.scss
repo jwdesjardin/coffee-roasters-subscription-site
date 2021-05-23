@@ -211,6 +211,9 @@
 		font-family: 'Fraunces', serif;
 		font-weight: 900;
 		margin-bottom: 10px;
+		span {
+			color: var(--dark-cyan-600);
+		}
 	}
 	.modal_details {
 		margin-bottom: 24px;

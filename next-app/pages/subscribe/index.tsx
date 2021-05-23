@@ -200,11 +200,10 @@ const Subscribe = () => {
 							</div>
 							<div className={styles.modal_content}>
 								<p className={styles.modal_plan}>
-									“I drink coffee <span className={styles.textHighlight}>{q1 ? q1 : '______'}</span>
-									, with a <span className={styles.textHighlight}>{q2 ? q2 : '______'}</span> type
-									of bean. <span className={styles.textHighlight}>{q3 ? q3 : '______'}</span> ground
-									ala <span className={styles.textHighlight}>{q4 ? q4 : '______'}</span>, sent to me{' '}
-									<span className={styles.textHighlight}>{q5 ? q5 : '______'}</span>.”
+									“I drink coffee <span>{q1 ? q1 : '______'}</span>, with a{' '}
+									<span>{q2 ? q2 : '______'}</span> type of bean. <span>{q3 ? q3 : '______'}</span>{' '}
+									ground ala <span>{q4 ? q4 : '______'}</span>, sent to me{' '}
+									<span>{q5 ? q5 : '______'}</span>.”
 								</p>
 								<p className={styles.modal_details}>
 									Is this correct? You can proceed to checkout or go back to plan selection if

@@ -326,6 +326,10 @@
   margin-bottom: 10px;
 }
 
+.modal_content .modal_plan span {
+  color: var(--dark-cyan-600);
+}
+
 .modal_content .modal_details {
   margin-bottom: 24px;
 }
