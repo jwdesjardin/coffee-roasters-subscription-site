@@ -51,8 +51,12 @@
 	min-height: 140px;
 	border-radius: 8px;
 	transition: 0.2s all linear;
-	&:hover {
+	&:hover:not(.selected) {
 		background-color: #fdd6ba;
+	}
+	&.selected {
+		background-color: var(--dark-cyan-600);
+		color: var(--light-cream-100);
 	}
 	h4 {
 		font-size: var(--xs-header-fs);
@@ -67,9 +71,4 @@
 			margin-bottom: 24px;
 		}
 	}
-}
-
-.selected {
-	background-color: var(--dark-cyan-600);
-	color: var(--light-cream-100);
 }

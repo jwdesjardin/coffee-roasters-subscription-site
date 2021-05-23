@@ -67,8 +67,13 @@
   transition: 0.2s all linear;
 }
 
-.option_container:hover {
+.option_container:hover:not(.selected) {
   background-color: #fdd6ba;
+}
+
+.option_container.selected {
+  background-color: var(--dark-cyan-600);
+  color: var(--light-cream-100);
 }
 
 .option_container h4 {
@@ -86,10 +91,5 @@
     font-size: var(--xs-header-fs);
     margin-bottom: 24px;
   }
-}
-
-.selected {
-  background-color: var(--dark-cyan-600);
-  color: var(--light-cream-100);
 }
 /*# sourceMappingURL=index.module.css.map */
