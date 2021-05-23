@@ -164,3 +164,17 @@ section {
 		color: var(--dark-cyan-600);
 	}
 }
+
+.tabletAndUp {
+	display: none;
+	@media (min-width: $media-tablet) {
+		display: flex;
+	}
+}
+
+.mobileOnly {
+	display: block;
+	@media (min-width: $media-tablet) {
+		display: none;
+	}
+}

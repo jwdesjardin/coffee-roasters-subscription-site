@@ -246,4 +246,26 @@ section {
 .li-selected span {
   color: var(--dark-cyan-600);
 }
+
+.tabletAndUp {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .tabletAndUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mobileOnly {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobileOnly {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
