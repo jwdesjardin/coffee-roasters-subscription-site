@@ -19,7 +19,7 @@
 }
 
 .hero_content {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	color: var(--light-cream-100);
 	text-align: center;
 	max-width: 398px;
@@ -129,7 +129,7 @@
 .why_textcontent {
 	padding-top: 64px;
 	margin-bottom: 64px;
-	@include flex-columnn-center;
+	@include flex-column-center;
 	@media (min-width: $media-desktop) {
 		margin-bottom: 86px;
 	}
@@ -145,7 +145,7 @@
 // HOW
 
 .how_container {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	margin-bottom: 120px;
 	max-width: 1045px;
 	h2 {
@@ -199,7 +199,7 @@
 }
 
 .how_card_container {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	@media (min-width: $media-tablet) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

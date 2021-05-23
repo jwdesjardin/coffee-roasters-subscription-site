@@ -1,7 +1,7 @@
 @import '../../styles/mixins';
 
 .container {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	text-align: center;
 	margin-top: 56px;
 	max-width: 285px;

@@ -1,7 +1,7 @@
 @import '../../styles/mixins';
 
 .container {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	text-align: center;
 	margin-bottom: 24px;
 	background-color: var(--dark-cyan-600);
@@ -17,7 +17,7 @@
 		padding: 0 40px;
 	}
 	@media (min-width: $media-desktop) {
-		@include flex-columnn-center;
+		@include flex-column-center;
 		text-align: center;
 		max-height: 382px;
 		margin: 0;

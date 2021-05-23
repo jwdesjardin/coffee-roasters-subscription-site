@@ -11,7 +11,7 @@
 // }
 
 .how_container {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	background-color: var(--dark-greyblue-900);
 	color: var(--light-cream-100);
 	border-radius: 12px;
@@ -73,7 +73,7 @@
 }
 
 .how_card_container {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	@media (min-width: $media-tablet) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -118,7 +118,7 @@
 .options_menu {
 	display: none;
 	@media (min-width: $media-desktop) {
-		@include flex-columnn-center;
+		@include flex-column-center;
 		width: 25%;
 		align-items: flex-start;
 		justify-content: flex-start;
@@ -139,7 +139,7 @@
 }
 
 .options_card_container {
-	@include flex-columnn-center;
+	@include flex-column-center;
 	margin: 0 auto;
 	button {
 		margin-top: 56px;
@@ -171,7 +171,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	@include flex-columnn-center;
+	@include flex-column-center;
 }
 .modal_container {
 	width: 90%;
@@ -203,7 +203,7 @@
 
 .modal_content {
 	padding: 28px 24px;
-	@include flex-columnn-center;
+	@include flex-column-center;
 
 	.modal_plan {
 		font-size: 24px;
