@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { option } from '../../types'
 import { ArrowIcon } from '../Icons'
 import styles from './index.module.css'
@@ -14,6 +14,13 @@ interface OptionsProps {
 
 export const Options: React.FC<OptionsProps> = ({ question, options, selected, setSelected }) => {
 	const [modalToggle, setModalToggle] = useState(false)
+
+	// on initial page load open the first question
+	useEffect(() => {
+		if (question === 'How do you drink your coffee?') {
+			setModalToggle(true)
+		}
+	}, [])
 
 	return (
 		<div className={styles.container}>
