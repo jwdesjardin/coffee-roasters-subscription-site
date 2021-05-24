@@ -172,16 +172,19 @@
 	top: 0;
 	left: 0;
 	@include flex-column-center;
+	z-index: 5;
 }
 .modal_container {
 	width: 90%;
-	margin: 40px 30px;
-	height: 597px;
+	height: 75%;
+	max-height: 597px;
 	border-radius: 12px;
 	background-color: var(--light-cream-100);
+	overflow-y: scroll;
 	@media (min-width: $media-tablet) {
 		width: 540px;
 		height: 597px;
+		overflow-y: hidden;
 	}
 }
 
@@ -190,6 +193,9 @@
 	color: var(--light-cream-100);
 	padding: 28px 24px;
 	border-radius: 12px 12px 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	h2 {
 		font-size: 28px;
 	}

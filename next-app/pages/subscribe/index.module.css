@@ -264,20 +264,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 5;
 }
 
 .modal_container {
   width: 90%;
-  margin: 40px 30px;
-  height: 597px;
+  height: 75%;
+  max-height: 597px;
   border-radius: 12px;
   background-color: var(--light-cream-100);
+  overflow-y: scroll;
 }
 
 @media (min-width: 768px) {
   .modal_container {
     width: 540px;
     height: 597px;
+    overflow-y: hidden;
   }
 }
 
@@ -286,6 +289,15 @@
   color: var(--light-cream-100);
   padding: 28px 24px;
   border-radius: 12px 12px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal_header h2 {

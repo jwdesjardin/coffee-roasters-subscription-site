@@ -9,6 +9,7 @@ import { HeroCard } from '../../components/HeroCard'
 import styles from './index.module.css'
 import { Options } from '../../components/Options'
 import { questions } from '../../data/questions'
+import { CloseIcon } from '../../components/Icons'
 
 const Subscribe = () => {
 	// const [options, setOptions] = useState({
@@ -188,6 +189,9 @@ const Subscribe = () => {
 						<div className={styles.modal_container}>
 							<div className={styles.modal_header}>
 								<h2>Order Summary</h2>
+								<div style={{ cursor: 'pointer' }} onClick={() => closeModal()}>
+									<CloseIcon></CloseIcon>
+								</div>
 							</div>
 							<div className={styles.modal_content}>
 								<p className={styles.modal_plan}>

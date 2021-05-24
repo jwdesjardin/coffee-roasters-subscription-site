@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   background-color: var(--light-cream-100);
-  z-index: 10;
+  z-index: 3;
 }
 
 @media (min-width: 1440px) {
