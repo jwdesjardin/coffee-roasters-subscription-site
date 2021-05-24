@@ -95,7 +95,8 @@ a {
 	}
 }
 
-section {
+section,
+header {
 	margin: 0 var(--page-margin);
 	@media (min-width: 1440px) {
 		margin: 0 auto;

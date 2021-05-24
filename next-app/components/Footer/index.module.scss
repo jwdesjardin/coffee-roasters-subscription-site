@@ -4,7 +4,6 @@
 	background-color: var(--dark-greyblue-900);
 	@include flex-column-center;
 	padding: 54px;
-	margin: 24px var(--page-margin) 72px;
 	@media (min-width: $media-desktop) {
 		flex-direction: row;
 		justify-content: space-between;

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const Footer = () => {
 	return (
-		<div className={styles.container}>
+		<section className={styles.container}>
 			<img
 				className={styles.logo}
 				src='/assets/shared/desktop/logo-white.svg'
@@ -28,6 +28,6 @@ export const Footer = () => {
 					<img src='/assets/shared/desktop/icon-instagram.svg' alt='' width='24px' height='24px' />
 				</a>
 			</div>
-		</div>
+		</section>
 	)
 }

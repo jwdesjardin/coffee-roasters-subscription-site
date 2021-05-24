@@ -160,12 +160,14 @@ a:hover {
   font-weight: 700;
 }
 
-section {
+section,
+header {
   margin: 0 var(--page-margin);
 }
 
 @media (min-width: 1440px) {
-  section {
+  section,
+  header {
     margin: 0 auto;
     max-width: 1280px;
   }
