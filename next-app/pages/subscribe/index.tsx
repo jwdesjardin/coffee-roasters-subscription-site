@@ -28,10 +28,9 @@ const Subscribe = () => {
 	const [modal, toggleModal] = useState(false)
 
 	const overlay_click_listener: React.MouseEventHandler<HTMLDivElement> = (e) => {
-		console.log('clicked', e.target)
-
+		const target = e.target as HTMLDivElement
 		//if the current target is the overlay close the modal
-		if (e.target.id === 'overlay') {
+		if (target.id === 'overlay') {
 			closeModal()
 		}
 	}
@@ -41,7 +40,6 @@ const Subscribe = () => {
 		document.body.style.top = `-${window.scrollY}px`
 		document.body.style.position = 'fixed'
 		document.body.style.width = '100vw'
-		console.log(document.body.style.top)
 	}
 
 	const closeModal = () => {
@@ -167,13 +165,6 @@ const Subscribe = () => {
 								<span className={styles.textHighlight}>{q4 ? q4 : '______'}</span>, sent to me{' '}
 								<span className={styles.textHighlight}>{q5 ? q5 : '______'}</span>.”
 							</p>
-							{/* <p>
-								“I drink coffee <span className={styles.textHighlight}>{options.question_1}</span>,
-								with a <span className={styles.textHighlight}>{options.question_2}</span> type of
-								bean. <span className={styles.textHighlight}>{options.question_3}</span> ground ala{' '}
-								<span className={styles.textHighlight}>{options.question_4}</span>, sent to me{' '}
-								<span className={styles.textHighlight}>{options.question_5}</span>.”
-							</p> */}
 						</div>
 
 						<button
