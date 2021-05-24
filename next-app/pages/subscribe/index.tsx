@@ -8,7 +8,7 @@ import { Footer } from '../../components/Footer'
 import { HeroCard } from '../../components/HeroCard'
 import styles from './index.module.css'
 import { Options } from '../../components/Options'
-import { questions } from './questions'
+import { questions } from '../../data/questions'
 
 const Subscribe = () => {
 	// const [options, setOptions] = useState({

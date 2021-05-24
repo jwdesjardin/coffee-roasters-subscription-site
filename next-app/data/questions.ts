@@ -1,4 +1,4 @@
-import { option } from '../../types'
+import { option } from '../types'
 
 export const questions: option[][] = [
 	[
