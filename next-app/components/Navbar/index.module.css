@@ -8,13 +8,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 0;
+  padding: 32px var(--page-margin);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: var(--light-cream-100);
   z-index: 10;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 32px 0;
+  }
 }
 
 .logo {
