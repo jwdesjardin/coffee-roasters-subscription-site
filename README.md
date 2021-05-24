@@ -337,7 +337,7 @@ const overlay_click_listener: React.MouseEventHandler<HTMLDivElement> = (e) => {
 #### Page State
 
 ![](./README-assets/dropdownPagestate1.png)
-![](./README-assets/dropdownPagestate2.png)
+![](./README-assets/dropdownpagestate2.png)
 
 Page State is used on the subscribe page to keep track of the responses to the questions as well as a piece of state to track if the checkout modal is being displayed. The state is used by the following components.
 
