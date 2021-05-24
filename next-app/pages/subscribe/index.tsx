@@ -161,7 +161,7 @@ const Subscribe = () => {
 						<div className={styles.summary_container}>
 							<h2>Order Summary</h2>
 							<p>
-								“I drink coffee <span className={styles.textHighlight}>{q1 ? q1 : '______'}</span>,
+								“I drink <span className={styles.textHighlight}>{q1 ? q1 : '______'}</span> coffee,
 								with a <span className={styles.textHighlight}>{q2 ? q2 : '______'}</span> type of
 								bean. <span className={styles.textHighlight}>{q3 ? q3 : '______'}</span> ground ala{' '}
 								<span className={styles.textHighlight}>{q4 ? q4 : '______'}</span>, sent to me{' '}
@@ -200,7 +200,7 @@ const Subscribe = () => {
 							</div>
 							<div className={styles.modal_content}>
 								<p className={styles.modal_plan}>
-									“I drink coffee <span>{q1 ? q1 : '______'}</span>, with a{' '}
+									“I drink <span>{q1 ? q1 : '______'}</span> coffee, with a{' '}
 									<span>{q2 ? q2 : '______'}</span> type of bean. <span>{q3 ? q3 : '______'}</span>{' '}
 									ground ala <span>{q4 ? q4 : '______'}</span>, sent to me{' '}
 									<span>{q5 ? q5 : '______'}</span>.”
