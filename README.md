@@ -325,10 +325,9 @@ const closeModal = () => {
 
 ```tsx
 const overlay_click_listener: React.MouseEventHandler<HTMLDivElement> = (e) => {
-	console.log('clicked', e.target)
-
+	const target = e.target as HTMLDivElement
 	//if the current target is the overlay close the modal
-	if (e.target.id === 'overlay') {
+	if (target.id === 'overlay') {
 		closeModal()
 	}
 }
@@ -540,6 +539,10 @@ I used a Mixin for flex-column-center because i was using these same properties 
 ```
 
 ### Continued development
+
+State Management: In the subscibe page Some of the options i saw to make it better were to make the next quetions dropdown being automatically triggered when the previous question is responded to. Or makeing a question be scrolled to and opened when a label is clicked in the aside menu. These would both require moving the state for the dropdown being toggled to the page level state instead of component level state like it is now.
+
+CSS: I like the CSS modules format creating components that can use global styles and have component level styles. I like the cleanliness of the jsx using class names but due to the pressure out there that i feel to try a CSS in JS approach i may use a library for my next project.
 
 ### Useful resources
 

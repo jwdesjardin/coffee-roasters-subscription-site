@@ -23,18 +23,9 @@ build out pages and use reusable components where applicable
    [x] add state to subsriptions page
    [x] add click event to update state
    [x] read state into summary
-   [] create summary modal with state
-   [] read state into aside menu
-   [] add toggle dropdown to questions
-
-refine media queries and process
-
-complete two more pages
-
-add interactivity
-
-consider using CSS utility classes
-BOOTSTRAP or TAILWIND CSS
+   [x] create summary modal with state
+   [x] read state into aside menu
+   [x] add toggle dropdown to questions
 
 ## Components
 
