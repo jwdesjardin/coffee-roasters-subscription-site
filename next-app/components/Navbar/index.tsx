@@ -11,8 +11,8 @@ export const Navbar = () => {
 				className={styles.logo}
 				src='/assets/shared/desktop/logo.svg'
 				alt='coffee roasters logo'
-				width='236px'
-				height='26px'
+				width='236'
+				height='26'
 			/>
 
 			<div className={styles.link_container}>
@@ -25,8 +25,8 @@ export const Navbar = () => {
 				<img
 					src='/assets/shared/mobile/icon-close.svg'
 					alt='hamburger icon'
-					width='16px'
-					height='16px'
+					width='16'
+					height='16'
 					className={styles.hamburger}
 					onClick={() => setHamburgerClicked(!hamburgerClicked)}
 				/>
@@ -34,8 +34,8 @@ export const Navbar = () => {
 				<img
 					src='/assets/shared/mobile/icon-hamburger.svg'
 					alt='hamburger icon'
-					width='16px'
-					height='16px'
+					width='16'
+					height='16'
 					className={styles.hamburger}
 					onClick={() => setHamburgerClicked(!hamburgerClicked)}
 				/>

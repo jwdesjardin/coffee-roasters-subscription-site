@@ -11,7 +11,7 @@ interface WhatCardProps {
 export const WhatCard: React.FC<WhatCardProps> = ({ imageURL, title, description, altText }) => {
 	return (
 		<div className={styles.container}>
-			<img src={imageURL} alt={altText} width='200px' height='151px' />
+			<img src={imageURL} alt={altText} width='200' height='151' />
 			<div className={styles.textcontent}>
 				<h3>{title}</h3>
 				<p>{description}</p>

@@ -12,7 +12,7 @@ export const WhyCard: React.FC<WhyCardProps> = ({ imageURL, title, description, 
 	return (
 		<div className={styles.container}>
 			<div className={styles.imagebox}>
-				<img src={imageURL} alt={altText} width='72px' />
+				<img src={imageURL} alt={altText} width='72' />
 			</div>
 			<div className={styles.textcontent}>
 				<h3>{title}</h3>

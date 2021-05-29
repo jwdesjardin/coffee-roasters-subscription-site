@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 export const Footer = () => {
 	return (
-		<section className={styles.container}>
+		<footer className={styles.container}>
 			<img
 				className={styles.logo}
 				src='/assets/shared/desktop/logo-white.svg'
 				alt='coffee roasters logo'
-				width='236px'
-				height='26px'
+				width='236'
+				height='26'
 			/>
 			<div className={styles.links_container}>
 				<Link href='/home'>HOME</Link>
@@ -19,15 +19,25 @@ export const Footer = () => {
 			</div>
 			<div className={styles.social_container}>
 				<a href='#'>
-					<img src='/assets/shared/desktop/icon-facebook.svg' alt='' width='24px' height='24px' />
+					<img
+						src='/assets/shared/desktop/icon-facebook.svg'
+						alt='facebook'
+						width='24'
+						height='24'
+					/>
 				</a>
 				<a href='#'>
-					<img src='/assets/shared/desktop/icon-twitter.svg' alt='' width='24px' height='24px' />
+					<img src='/assets/shared/desktop/icon-twitter.svg' alt='twitter' width='24' height='24' />
 				</a>
 				<a href='#'>
-					<img src='/assets/shared/desktop/icon-instagram.svg' alt='' width='24px' height='24px' />
+					<img
+						src='/assets/shared/desktop/icon-instagram.svg'
+						alt='instagram'
+						width='24'
+						height='24'
+					/>
 				</a>
 			</div>
-		</section>
+		</footer>
 	)
 }
